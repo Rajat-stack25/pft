@@ -1,0 +1,31 @@
+<%- include("partials/Header")-%>
+
+
+  <div class="cont">
+    <h2 class="level-2 bb-1">Add New Expense</h2>
+
+    <form action="/add" method="post">
+      <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Enter expense name... ">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="amount" placeholder="Enter expense amount... ">
+        </div>
+        <div class="form-group">
+          <select name="category" class="form-control">
+            <option>Category</option>
+            <option value="shopping" >Shopping</option>
+            <option value="entertainment" >Entertainment</option>
+            <option value="transport" >Transport</option>
+            <option value="living" >Living</option>
+            <option value="utilities" >Utilities</option>
+            <option value="food" >Food</option>
+            <option value="others" >Others</option>
+          </select>
+        </div>
+        <button class="btn btn-dark btn-block">Add Expense</button>
+      </form>
+  </div>
+
+
+<%- include("partials/Footer")-%>
